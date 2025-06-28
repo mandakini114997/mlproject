@@ -1,0 +1,25 @@
+{
+    "containers.commands.attach": "${containerCommand} exec -it ${containerId} ${shellCommand}",
+    "containers.commands.build": "${containerCommand} build --pull --rm -f \"${dockerfile}\" -t ${tag} \"${context}\"",
+    "containers.commands.composeDown": [
+
+        {
+            "label": "Compose Down",
+            "template": "${composeCommand} ${configurationFile} down"
+        }
+    ],
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/myfile"
+            ],
+            "url": "schemaURL"
+        },
+        {
+            "fileMatch": [
+                "/myfile"
+            ],
+            "url": "schemaURL"
+        }
+    ]
+}
